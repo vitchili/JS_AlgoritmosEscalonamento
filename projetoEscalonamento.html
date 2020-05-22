@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Escalonamento</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Cálculo de Escalonamento</h1>
+    </header>
+    <section id="corpoEntrada">
+        <div>
+            <p>Entrada de dados:</p>
+                <table id="dados">
+                    <tr>
+                        <th>Processo</th>
+                        <th>Chegada</th>
+                        <th>Pico CPU</th>
+                        <th>Prioridade</th>
+                    </tr>
+                    <tr>
+                        <td>P1</td>
+                        <td><input type="number" id="p1Chegada" class="insereDados"></td>
+                        <td><input type="number" id="p1Pico" class="insereDados"></td>
+                        <td><input type="number" id="p1Prioridade" class="insereDados"></td>
+                    </tr>
+                    <tr>
+                        <td>P2</td>
+                        <td><input type="number" id="p2Chegada" class="insereDados"></td>
+                        <td><input type="number" id="p2Pico" class="insereDados"></td>
+                        <td><input type="number" id="p2Prioridade" class="insereDados"></td>
+                    </tr>
+                    <tr>
+                        <td>P3</td>
+                        <td><input type="number" id="p3Chegada" class="insereDados"></td>
+                        <td><input type="number" id="p3Pico" class="insereDados"></td>
+                        <td><input type="number" id="p3Prioridade" class="insereDados"></td>
+                    </tr>
+                    <tr>
+                        <td>P4</td>
+                        <td><input type="number" id="p4Chegada" class="insereDados"></td>
+                        <td><input type="number" id="p4Pico" class="insereDados"></td>
+                        <td><input type="number" id="p4Prioridade" class="insereDados"></td>
+                    </tr>
+                    <tr>
+                        <td>P5</td>
+                        <td><input type="number" id="p5Chegada" class="insereDados"></td>
+                        <td><input type="number" id="p5Pico" class="insereDados"></td>
+                        <td><input type="number" id="p5Prioridade" class="insereDados"></td>
+                    </tr>
+                </table>
+            <br>
+            <p>Algoritmo de Escalonamento:
+                <select id="tipoEscalonamento">
+                    <option value="fcfs">FCFS</option>
+                    <option value="sjf">SJF</option>
+                    <option value="prioridades">Prioridades</option>
+                    <option value="rr">RR</option>
+                  </select> 
+            </p>
+            <p>Preempção:
+                <input type="radio" name="preempcao" id="comPreempcao">
+                <label for="comPreempcao">Sim</label>
+                <input type="radio" name="preempcao" id="semPreempcao" checked>
+                <label for="semPreempcao">Não</label>
+            </p>
+            <p>Quantum: (somente RR):
+                <input type="number" id="quantum">
+            </p>
+            <p>
+                <input type="button" value="Calcular" onclick="main()">
+            </p>
+        </div>
+    </section>
+    <section id="corpoContas">
+        <p>Cálculo de TME:</p>
+    </section>
+    <article>
+        <div id="linhaTempo">
+            <p>Linha do tempo:</p>
+            <div id="numeroLinhaTempo"></div>
+        </div>
+    </article>
+    <footer>
+        &copy peppervitu
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

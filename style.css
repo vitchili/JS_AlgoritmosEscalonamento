@@ -1,0 +1,79 @@
+body{
+    background-color: rgb(224, 224, 224);
+    margin: 0px;
+}
+
+header{
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(43, 43, 43);
+    font-size: 8pt;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0px;
+    margin: 5px;
+}
+section#corpoEntrada{
+    background-color: white;
+    width: 500px;
+    margin-left: 40px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .3);
+    padding: 1px 15px 1px;
+    border-radius: 5px;
+}
+section#corpoContas{
+    position: relative;
+    top: -380px;
+    right: -545px;
+    background-color: white;
+    width: 500px;
+    height: 378px;
+    margin-left: 42px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .3);
+    padding: 1px 15px 1px;
+    border-radius: 5px;
+}
+
+
+/***************************/
+table#dados {
+    text-align: center;
+    margin: auto;
+    width:300px;
+    border-collapse: separate;
+}
+input.insereDados{
+    position: relative;
+    width: 90%;
+}
+#quantum {
+    position: relative;
+    width: 50px;
+}
+article{/*
+    position: relative;
+    top:-380px;*/
+    position: absolute;
+    top: 440px;
+    background-color: white;
+    width: 1050px;
+    height: 150px;
+    margin: 15px 40px 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .3);
+    padding: 1px 15px 1px;
+    border-radius: 5px;
+}
+div#linhaTempo{
+    text-align: left;
+
+}
+
+footer{
+    position: absolute;
+    top: 620px;
+    left: 540px;
+    font-family: Helvetica, sans-serif;
+    font-size: 9pt;
+    color: rgb(77, 77, 77);
+    text-align: center;
+    padding: 5px;
+}
